@@ -23,6 +23,8 @@ export const getStaticProps: GetStaticProps<
       token: draftMode ? readToken : '',
       posts,
     },
+
+    revalidate: 10,
   }
 }
 
