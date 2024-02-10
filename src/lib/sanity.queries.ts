@@ -21,7 +21,7 @@ export async function getPost(
 }
 
 export const postSlugsQuery = groq`
-*[_type == "post" && defined(slug.current)][].slug.current
+*[_type == "innlegg" && defined(slug.current)][].slug.current
 `
 
 export interface Post {
