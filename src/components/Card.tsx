@@ -10,22 +10,22 @@ export default function Card({ post }: { post: Post }) {
       {post.mainImage ? (
         <Image
           className="card__cover"
-          src={urlForImage(post.mainImage).width(500).height(300).url()}
-          height={300}
-          width={500}
+          src={urlForImage(post.mainImage).width(466).height(266).url()}
+          height={266}
+          width={466}
           alt=""
         />
       ) : (
         <div className="card__cover--none" />
       )}
       <div className="card__container">
-        <h3 className="card__title">
+        <h3 className="text-2xl font-bold mt-3">
           <a className="card__link" href={`/innlegg/${post.slug.current}`}>
             {post.title}
           </a>
         </h3>
-        <p className="card__excerpt">{post.excerpt}</p>
-        <p className="card__date">{formatDate(post._createdAt)}</p>
+        <p className="text-md">{post.excerpt}</p>
+        <p className="font-bold text-xs absolute right-2">{formatDate(post._createdAt)}</p>
       </div>
     </div>
   )

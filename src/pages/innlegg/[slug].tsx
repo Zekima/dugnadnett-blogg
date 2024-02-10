@@ -58,8 +58,8 @@ export default function ProjectSlugRoute(
           <Image
             className="post__cover"
             src={urlForImage(post.mainImage).url()}
-            height={231}
-            width={367}
+            height={600}
+            width={900}
             alt=""
           />
         ) : (
@@ -67,7 +67,6 @@ export default function ProjectSlugRoute(
         )}
         <div className="post__container">
           <h1 className="post__title">{post.title}</h1>
-          <p className="post__excerpt">{post.excerpt}</p>
           <p className="post__date">{formatDate(post._createdAt)}</p>
           <div className="post__content">
             <PortableText value={post.body} />

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Container({ children }: { children: React.ReactNode }) {
   return (
-    <div className="container">
+    <div className="max-w-[1300px] m-auto">
       <header className="header">
         <Link className="header__title" href="/">
           DugnadNett

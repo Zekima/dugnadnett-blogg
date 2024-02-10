@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --space-0: 0;
   --space-1: 4px;
@@ -72,7 +76,7 @@ body {
 .post .post__cover,
 .post .post__cover--none {
   width: 100%;
-  height: 200px;
+  height: 250px;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -135,14 +139,13 @@ body {
 @media (min-width: 800px) {
   .post .post__cover,
   .post .post__cover--none {
-    width: 750px;
-    height: 380px;
+    width: 100%;
+    height: 400px;
   }
 
   .post .post__title {
     font-size: var(--font-size-10);
     line-height: var(--line-height-10);
-    margin: var(--space-6) 0 0;
     letter-spacing: -0.025em;
   }
 
@@ -160,7 +163,7 @@ body {
   }
 
   .post .post__content {
-    margin-top: var(--space-7);
+    margin-top: var(--space-5);
   }
 }
 
@@ -190,7 +193,6 @@ main {
   font-weight: 800;
   font-size: var(--font-size-3);
   line-height: var(--line-height-1);
-  padding-left: var(--space-2);
   margin: var(--space-3) 0;
   text-decoration: none;
   color: var(--black);
@@ -341,14 +343,12 @@ main {
   display: flex;
   flex-direction: column;
   padding: var(--space-2);
-  padding: 9px;
+  padding: 20px;
   position: relative;
   border-bottom: 1px solid #ced2d9;
+  background-color: #f9f9f9;
 }
 
-.card .card__container {
-  margin: 0 var(--space-1) 0;
-}
 
 .card .card__cover {
   width: 100%;
@@ -359,7 +359,8 @@ main {
 
 .card .card__cover--none {
   width: 100%;
-  height: 231px;
+  height: 350px;
+  
   background: var(--black);
 }
 
@@ -429,18 +430,14 @@ main {
 }
 
 @media (min-width: 800px) {
-  .card {
-    flex-direction: row;
-  }
 
-  .card .card__container {
-    margin: 0 var(--space-4) 0;
-  }
 
   .card .card__cover,
   .card .card__cover--none {
-    min-width: 366.5px;
-    max-width: 366.5px;
-    max-height: 231px;
+    min-width: 100%;
+    max-width: 350px;
+    max-height: 200px;
   }
 }
+
+
