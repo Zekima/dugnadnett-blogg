@@ -16,7 +16,7 @@ export default function Welcome() {
           <a href="https://github.com/Zekima/dugnadnett"><p className=''>Repository → </p></a>
         </div>
         <div className="bg-gray-300 p-8 underline">
-         <Link prefetch href="/dokumentasjon"> <p className=''>Dokumentasjon → </p></Link>
+         <Link href="/dokumentasjon"> <p className=''>Dokumentasjon → </p></Link>
         </div>
         <div className="bg-gray-300 p-8 underline">
           <a href="https://dugnadnett.no/"><p className=''>Gå til dugnadnett.no → </p></a>
