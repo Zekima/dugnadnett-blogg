@@ -71,7 +71,11 @@ export default function ProjectSlugRoute(
           <h1 className="post__title">{post.title}</h1>
           <p className="post__date">{formatDate(post._createdAt)}</p>
           <div className="post__content">
-            <PortableText value={post.body} />
+            <PortableText value={post.body} components={{
+              block: {
+                normal: ({ children }) => <p className="mb-4">{children}</p>,
+              },
+            }} />
           </div>
         </div>
       </section>

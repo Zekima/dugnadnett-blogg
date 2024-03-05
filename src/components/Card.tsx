@@ -25,7 +25,7 @@ export default function Card({ post }: { post: Post }) {
           </a>
         </h3>
         <p className="text-md">{post.excerpt}</p>
-        <p className="font-bold text-xs absolute right-2">{formatDate(post._createdAt)}</p>
+        <p className="font-bold text-xs absolute right-2 bottom-1">{formatDate(post._createdAt)}</p>
       </div>
     </div>
   )
