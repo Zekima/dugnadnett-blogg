@@ -53,6 +53,7 @@
 
   --max-width-0: 320px;
   --max-width-1: 768px;
+  
 }
 
 .whitespace-pre-wrap {
@@ -65,10 +66,15 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  scrollbar-gutter: stable both-edges;
+
+
+  
 }
 
 body {
   margin: 0;
+
 }
 
 /* Post page */
