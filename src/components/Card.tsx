@@ -19,12 +19,12 @@ export default function Card({ post }: { post: Post }) {
         <div className="card__cover--none" />
       )}
       <div className="card__container">
-        <h3 className="text-2xl font-bold mt-3">
+        <h3 className="text-md font-bold mt-3">
           <a className="card__link" href={`/innlegg/${post.slug.current}`}>
             {post.title}
           </a>
         </h3>
-        <p className="text-md">{post.excerpt}</p>
+        <p className="text-sm mb-2">{post.excerpt}</p>
         <p className="font-bold text-xs absolute right-2 bottom-1">{formatDate(post._createdAt)}</p>
       </div>
     </div>
